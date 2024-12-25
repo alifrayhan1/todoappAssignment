@@ -48,16 +48,20 @@ saveIcon.addEventListener("click", (e) => {
   input.value = "";
 
   // Edit functionality
-  editButton.addEventListener("click", () => {
-    if (editButton.innerText.toLowerCase() == "edit") {
-      editButton.innerText = "save";
-      taskInput.removeAttribute("readonly");
-      taskInput.focus();
-    } else {
-      editButton.innerText = "edit";
-      taskInput.setAttribute("readonly", "readonly");
+editButton.addEventListener("click", () => {
+  if (editButton.innerText.toLowerCase() === "edit") {
+    editButton.innerText = "save";
+    taskInput.removeAttribute("readonly");
+    taskInput.focus();
+  } else {
+    editButton.innerText = "edit";
+    if (taskInput.value === '') {
+      alert('Write something or delete the task');
     }
-  });
+    taskInput.setAttribute("readonly", "readonly");
+  }
+});
+
 
   // Delete functionality
   deleteButton.addEventListener("click", () => {
