@@ -1,57 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    
+
+body {
     background-color: azure;
 }
-#inputTask{
-        border: 2px black solid;
-        display: flex;
-        margin: 0 5vw;
-        border-radius: 1rem;
-        justify-content: center;
-        input{
-            width: 70vw;
-            border-radius: 1rem;
-            padding: 0.5rem 1rem ;
-        }
-    button{
-        border-radius: 1rem;
-        width: 30vw;
-        background-color: #FCBC40;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+
+#inputTask {
+    border: 2px solid black;
+    display: flex;
+    margin: 0 5vw;
+    border-radius: 1rem;
+    justify-content: center;
 }
-.task{
+
+#inputTask input {
+    width: 70vw;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: azure;
+}
+#inputTask input:focus{
+    background-color: azure;
+}
+#inputTask button {
+    border-radius: 1rem;
+    width: 30vw;
+    background-color: #FCBC40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.task {
     margin: 1rem 2.4rem;
     display: flex;
     justify-content: center;
-    textarea{
-        width: 70vw;
-        border-radius: 1rem;
-        padding: 0.5rem 1rem ;
-        resize: none;
-        background-color: azure;
-    }
-    textarea:focus{
-        outline: none;
-        background-color: none;
-    }
-    button{
-        margin: .2rem;
-        border-radius: 1rem;
-        width: 15vw;
-        background-color:  #FCBC40;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: small;
-    }
 }
-.checked{
+
+.task textarea {
+    width: 70vw;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    resize: none;
+    background-color: azure;
+}
+
+.task textarea:focus {
+    outline: none;
+}
+
+.task button {
+    margin: 0.2rem;
+    border-radius: 1rem;
+    width: 15vw;
+    background-color: #FCBC40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.checked {
     text-decoration: line-through;
-    background-image: url(image/circle.png);
+    background-image: url('image/circle.png');
     background-repeat: no-repeat;
     background-position-y: center;
 }
