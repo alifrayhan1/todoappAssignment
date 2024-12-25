@@ -28,7 +28,8 @@ saveIcon.addEventListener("click", (e) => {
   const task = document.createElement("div");
   task.classList.add("task");
 
-  const taskInput = document.createElement("input");
+  const taskInput = document.createElement("textarea");//change input to textarea
+
   taskInput.type = "text";
   taskInput.value = inputValue;
   taskInput.readOnly = true;

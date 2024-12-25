@@ -21,7 +21,7 @@ body{
     button{
         border-radius: 1rem;
         width: 30vw;
-        background-color: bisque;
+        background-color: #FCBC40;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
@@ -29,26 +29,31 @@ body{
     margin: 1rem 2.4rem;
     display: flex;
     justify-content: center;
-    input{
-        width: 60vw;
+    textarea{
+        width: 70vw;
         border-radius: 1rem;
         padding: 0.5rem 1rem ;
-      
+        resize: none;
+        background-color: azure;
     }
-    input:focus{
+    textarea:focus{
         outline: none;
         background-color: none;
     }
     button{
         margin: .2rem;
         border-radius: 1rem;
-        width: 20vw;
-        background-color: bisque;
+        width: 15vw;
+        background-color:  #FCBC40;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: small;
     }
 }
 .checked{
     text-decoration: line-through;
+    background-image: url(image/circle.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
 }
+
 
