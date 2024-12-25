@@ -70,6 +70,9 @@ editButton.addEventListener("click", () => {
 
   //checked functionality
   taskInput.addEventListener("click", () => {
+    if (editButton.innerText.toLowerCase() === "save") {
+      return; 
+    }
     if (taskInput.classList.contains("checked")) {
       taskInput.classList.remove("checked");
     } else {
