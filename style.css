@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#inputTask{
+        border: 2px black solid;
+        display: flex;
+        margin: 0 5vw;
+        border-radius: 1rem;
+        justify-content: center;
+        input{
+            width: 70vw;
+            border-radius: 1rem;
+            padding: 0.5rem 1rem ;
+        }
+    button{
+        border-radius: 1rem;
+        width: 30vw;
+        background-color: bisque;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+.task{
+    margin: 1rem 2.4rem;
+    display: flex;
+    justify-content: center;
+    input{
+        width: 60vw;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem ;
+      
+    }
+    input:focus{
+        outline: none;
+        background-color: none;
+    }
+    button{
+        margin: .2rem;
+        border-radius: 1rem;
+        width: 20vw;
+        background-color: bisque;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+    }
+}
+.checked{
+    text-decoration: line-through;
+}
+.unChecked{
+    text-decoration: none;
+}
