@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    
+    background-color: azure;
+}
 #inputTask{
         border: 2px black solid;
         display: flex;
@@ -47,6 +51,4 @@
 .checked{
     text-decoration: line-through;
 }
-.unChecked{
-    text-decoration: none;
-}
+
